@@ -6,7 +6,7 @@ const int pinLED_Yellow = 12;
 const int pinLED_Green  = 11;
 
 const int pinRelay      = 10;
-const int pinReset      = 9;
+const int pinReset      =  9;
 
 
 
@@ -33,7 +33,6 @@ void blinkLED() {
 }
 
 void setup() {
-
         digitalWrite(pinReset, HIGH);
         digitalWrite(pinRelay, HIGH);
 
@@ -71,9 +70,7 @@ void loop() {
 
          if (valKey == 81) {
                 Serial.println("\nTryTryLu: KEY Q-81.");
-
                 help();
-
                 Serial.println("\nTryTryLu: KEY Q-81 Done.");
 
          } else if (valKey == 87) {
