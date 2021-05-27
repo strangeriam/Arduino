@@ -1,0 +1,20 @@
+/*
+Keyboard key reserved:
+Q[81] W[87] E[69] R[82] T[84] Y[89] U[85]
+A[65] S[83]
+*/
+
+
+//
+void setup(void)
+{
+	Serial.begin(9600);
+	Serial.println("Uno, Relay Go Ver: 2021.05.27");
+
+	pinMode(pinLED1, OUTPUT);
+	pinMode(pinRelay1, OUTPUT);
+	digitalWrite(pinRelay1, LOW);
+
+	//keyPrint();
+	Serial.println("Relay Go Ready Yet.");
+}
